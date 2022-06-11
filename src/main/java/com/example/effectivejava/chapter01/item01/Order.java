@@ -1,5 +1,10 @@
 package com.example.effectivejava.chapter01.item01;
 
+import java.util.Arrays;
+import java.util.EnumMap;
+import java.util.EnumSet;
+import java.util.Set;
+
 public class Order {
 
     private boolean prime;
@@ -7,6 +12,8 @@ public class Order {
     private boolean urgent;
 
     private Product product;
+
+    private OrderStatus orderStatus;
 
     public static Order primeOrder(Product product){
         Order order = new Order();

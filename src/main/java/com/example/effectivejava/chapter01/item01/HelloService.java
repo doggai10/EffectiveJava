@@ -8,4 +8,18 @@ public interface HelloService {
         if(lang.equals("ko")) return  new KoreanHelloService();
         return new EnglishHelloService();
     }
+
+    static String hi(){
+        prepareMessage();
+        return "hi";
+    }
+
+    private static void prepareMessage() {
+    }
+
+    default String bye(){
+        prepareMessage();
+        return "bye";
+    }
+
 }
